@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>האתר שלי</title>
+  <meta name="description" content="אתר חדש">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">האתר שלי</a>
+    <nav>
+      <a href="#about">אודות</a>
+      <a href="#services">שירותים</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>ברוכים הבאים לאתר החדש</h1>
+      <p>כאן יופיע המסר הראשי של האתר.</p>
+      <a class="btn" href="#contact">בואו נדבר</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>אודות</h2>
+      <p>טקסט קצר שמציג את האתר, העסק או הפרויקט.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>שירותים</h2>
+      <div class="cards">
+        <article class="card"><h3>שירות א׳</h3><p>תיאור קצר.</p></article>
+        <article class="card"><h3>שירות ב׳</h3><p>תיאור קצר.</p></article>
+        <article class="card"><h3>שירות ג׳</h3><p>תיאור קצר.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>צור קשר</h2>
+      <form id="contact-form">
+        <label>שם <input name="name" required></label>
+        <label>אימייל <input name="email" type="email" required></label>
+        <label>הודעה <textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">שליחה</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> האתר שלי</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
